@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61b32dad-2afd-4cba-b223-ac1294318433" name="Default Changelist" comment="" />
+    <list default="true" id="61b32dad-2afd-4cba-b223-ac1294318433" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonatafos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonatafos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +18,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -169,6 +178,10 @@
       <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
       <path value="$PROJECT_DIR$/vendor/sonata-project/media-bundle" />
       <path value="$PROJECT_DIR$/vendor/sonata-project/classification-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/intl-extra" />
+      <path value="$PROJECT_DIR$/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/vendor/overblog/graphql-bundle" />
+      <path value="$PROJECT_DIR$/vendor/overblog/graphiql-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XnCqPwfNJE2ha0msfzViWYenq9" />
@@ -178,9 +191,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/PFE/SocleSymfony" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
@@ -211,6 +226,7 @@
       <workItem from="1583229534910" duration="28000" />
       <workItem from="1583751188572" duration="1180000" />
       <workItem from="1583913676392" duration="18000" />
+      <workItem from="1584641671534" duration="9310000" />
     </task>
     <servers />
   </component>

@@ -156,6 +156,10 @@
       <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
       <path value="$PROJECT_DIR$/vendor/sonata-project/media-bundle" />
       <path value="$PROJECT_DIR$/vendor/sonata-project/classification-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/intl-extra" />
+      <path value="$PROJECT_DIR$/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/vendor/overblog/graphql-bundle" />
+      <path value="$PROJECT_DIR$/vendor/overblog/graphiql-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
