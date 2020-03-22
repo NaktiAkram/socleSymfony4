@@ -1,0 +1,15 @@
+Query:
+  type: object
+  config:
+    description: "Environment query"
+    fields:
+      environments:
+        type: "[Environments]"
+        resolve: "@=resolver('Environments')"
+      environment:
+        type: "Environments"
+        args:
+          id:
+            description: "Get by ID"
+            type: "Int"
+        resolve: "@=resolver('Environment',[args])"

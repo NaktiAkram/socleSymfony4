@@ -1,0 +1,10 @@
+Mutation:
+  type: object
+  config:
+    fields:
+      NewEnvironment:
+        type: "Environments!"
+        resolve: "@=mutation('NewEnvironment', [args['environment']])"
+        args:
+          environment:
+            type: "EnvironmentInput"

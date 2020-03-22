@@ -1,0 +1,18 @@
+Environments:
+  type: object
+  config:
+    description: "Environment type"
+    fields:
+      id:
+        type: "Int"
+        description: "Environment ID"
+      env:
+        type: "String"
+        description: "Environment name"
+
+EnvironmentInput:
+  type: input-object
+  config:
+    fields:
+      env:
+        type: "String!"
