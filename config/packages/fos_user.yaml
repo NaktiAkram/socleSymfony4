@@ -1,0 +1,56 @@
+fos_user:
+  db_driver:      orm # can be orm or odm
+  firewall_name:  main
+  user_class:      App\Application\Sonata\UserBundle\Entity\User
+
+  group:
+    group_class:    App\Application\Sonata\UserBundle\Entity\Group
+    group_manager: sonata.user.orm.group_manager
+  profile:
+
+    # Authentication Form
+    form:
+      type:               fos_user_profile
+      name:               fos_user_profile_form
+      validation_groups:  [Authentication]
+
+  service:
+    mailer: 'fos_user.mailer.noop'
+
+  from_email:
+    address: admin@sonata.com
+    sender_name: admin@sonata.com
+
+sonata_user:
+  security_acl: false
+  manager_type: orm
+
+  impersonating:
+    route:                page_slug
+    parameters:           { path: / }
+  class:                  # Entity Classes
+    user:               Application\Sonata\UserBundle\Entity\User
+    group:              Application\Sonata\UserBundle\Entity\Group
+  admin:                  # Admin Classes
+    user:
+      class:          Sonata\UserBundle\Admin\Entity\UserAdmin
+      controller:     Sonata\AdminBundle\Controller\CRUDController
+      translation:    SonataUserBundle
+    group:
+      class:          Sonata\UserBundle\Admin\Entity\GroupAdmin
+      controller:     Sonata\AdminBundle\Controller\CRUDController
+      translation:    SonataUserBundle
+  profile:
+
+  mailer: sonata.user.mailer.default
+
+doctrine:
+  orm:
+    entity_managers:
+      default:
+        mappings:
+          FOSUserBundle: ~
+          ApplicationSonataUserBundle: ~
+          SonataUserBundle: ~
+
+

@@ -1,0 +1,8 @@
+EndPointsCollection:
+  type: "object"
+  config:
+    description: "EndPoints list"
+    fields:
+      EndPoints:
+        type: "[EndPoints]"
+        description: "EndPoints"

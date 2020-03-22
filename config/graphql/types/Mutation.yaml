@@ -1,0 +1,14 @@
+Mutation:
+  type: "object"
+  config:
+    fields:
+      EndPoints_new:
+        type: "EndPoints!"
+        args:
+            EndPoints:
+              type: "EndPointsInput!"
+        resolve: "@=mutation('EndPointsNew', [args['EndPoints']])"  
+        description: >
+          Add new EndPoints.
+
+       

@@ -1,0 +1,56 @@
+EndPoints:
+  type: "object"
+  config:
+    description: "EndPoints Type"
+    fields:
+      id:
+        type: "Int"
+        description: "EndPoints ID"
+      kind:
+        type: "String"
+        description: "EndPoints kind"
+      apiVersion:
+        type: "String"
+        description: "EndPoints apiVersion"
+      namespace:
+        type: "String"
+        description: "EndPoints nameSpace"
+      name:
+        type: "String"
+        description: "EndPoints name"
+      labels:
+        type:  "[String]"
+        description: "EndPoints label"
+      ipAdress:
+        type: "String"
+        description: "EndPoints ip address" 
+      port:
+        type: "String"
+        description: "EndPoints ip port"     
+      
+EndPointsInput:
+  type: "input-object"
+  config:
+    fields:
+      kind:
+        type: "String"
+        description: "EndPoints kind"
+      apiVersion:
+        type: "String"
+        description: "EndPoints apiVersion"
+      namespace:
+        type: "String"
+        description: "EndPoints nameSpace"
+      name:
+        type: "String"
+        description: "EndPoints name"
+      labels:
+        type:  "[String]"
+        description: "EndPoints label"
+      ipAdress:
+        type: "String"
+        description: "EndPoints ip address" 
+      port:
+        type: "String"
+        description: "EndPoints ip port"      
+     

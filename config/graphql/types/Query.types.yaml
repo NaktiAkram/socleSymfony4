@@ -1,0 +1,19 @@
+Query:
+  type: "object"
+  config:
+    fields:
+      EndPoints:
+          type: "EndPoints"
+          args:
+            id:
+              description: "Get EndPoints by ID"
+              type: "Int"
+          resolve: "@=resolver('EndPoints', [args['id']])"
+      EndPoints_collection:
+              type: "EndPointsCollection"
+              args:
+                limit:
+                  description: "EndPoints limit"
+                  type: "Int"               
+              resolve: "@=resolver('EndPointsList',[args])"    
+      
