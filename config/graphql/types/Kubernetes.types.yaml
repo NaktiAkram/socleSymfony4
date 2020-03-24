@@ -1,0 +1,39 @@
+#Héritage
+#Super Class
+Kubernetes:
+  type: interface
+  heirs:
+    - ConfigMap
+  config:
+    fields:
+      id:
+        type: "Int"
+      kind:
+        type: "String"
+      apiVersion:
+        type: "String"
+      namespace:
+        type: "String"
+      name:
+        type: "String"
+
+ConfigMap:
+  type: object
+  inherits: [Kubernetes]
+  config:
+    interfaces: [Kubernetes]
+    description: "ConfigMap type"
+    fields:
+      id:
+        type: "Int"
+        description: "ConfigMap ID"
+      data:
+        type: "String"
+        description: "Environment data"
+
+ConfigMapInput:
+  type: input-object
+  config:
+    fields:
+      data:
+        type: "String!"

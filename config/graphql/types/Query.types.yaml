@@ -1,7 +1,7 @@
 Query:
   type: object
   config:
-    description: "Environment query"
+    description: "Query"
     fields:
       environments:
         type: "[Environments]"
@@ -13,3 +13,6 @@ Query:
             description: "Get by ID"
             type: "Int"
         resolve: "@=resolver('Environment',[args])"
+      configmaps:
+        type: "[ConfigMap]"
+        resolve: "@=resolver('ConfigMaps')"

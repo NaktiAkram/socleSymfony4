@@ -48,11 +48,6 @@ class Kubernetes
      */
     private $environments;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Values", inversedBy="kubernetes")
-     */
-    private $value;
-
     public function __construct()
     {
         $this->environments = new ArrayCollection();
@@ -147,18 +142,6 @@ class Kubernetes
             $this->environments->removeElement($environment);
             $environment->removeKubernete($this);
         }
-
-        return $this;
-    }
-
-    public function getValue(): ?Values
-    {
-        return $this->value;
-    }
-
-    public function setValue(?Values $value): self
-    {
-        $this->value = $value;
 
         return $this;
     }
